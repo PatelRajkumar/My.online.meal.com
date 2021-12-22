@@ -1,0 +1,246 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navbar Styling */
+#navbar{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 10vh;
+    z-index: 1;
+    /* justify-content: center; */
+}
+#navbar::before{
+    content: "";
+    background: black;
+    width: 100%;
+    height:100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;    
+}
+/* Logo Styling */
+#logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 1vh 2vw;
+}
+/* List Styling */
+#navbar ul{
+    display: flex;
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    text-decoration: none;
+    border-radius: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.884);
+    padding: 5px 5px;
+    margin: 5px 10px;
+}
+#navbar li a:hover{
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+}
+/* Home section styling */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    /* position: relative; */
+    height: 500px;
+    /* top: 8vh; */
+     padding: 40px 20px;
+}
+ #home::before{
+    content: "";
+    position:absolute;
+    background: url(../images/home_bg.jpg) no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+    opacity: 0.90;
+} 
+
+/* Services Section */
+#services{
+    position:relative;
+    /* top: 50vh; */
+}
+#services h1{
+    color: black;
+    /* margin: 5vh ; */
+    /* line-height: 15vh ; */
+}
+#services-box{
+    display: flex;
+}
+.box{
+    border: 2px solid red;
+    background-color:#cbbfad29;
+    border-radius: 23px;
+    margin: 10px 20px;
+}
+#services-1{
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+#services-2{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    display: block;
+    margin: auto;
+}
+#services-3{
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 50%;
+    filter: invert(100%);
+    display: block;
+    margin: auto;
+}
+.box p{
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    padding: 5px;
+}
+/* Clients section */
+#clients-section{
+    /* margin-top: 10vh; */
+    line-height: 10vh;
+    height: 400px;
+}
+#clients-section::before{
+    content: "";
+    position:absolute;
+    background: url(../images/bg1.jpg) no-repeat center center/cover;
+    z-index: -1;
+    width: 100%;
+    height: 400px;
+    opacity: 0.5;
+}
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients-h2{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 3rem;
+}
+.clients img{
+    /* border: 2px solid red; */
+    height: 150px;
+    width: 150px;
+}
+#apple{
+    height: 180px;
+    width: 200px;
+    /* padding: 20px; */
+    /* border-radius: 50%; */
+}
+#microsoft{
+    padding: 40px;
+}
+#google{
+    padding: 20px;
+}
+#linkedin{
+    border-radius: 50%;
+    padding: 30px;
+}
+#bitcoin{
+    padding: 30px;
+}
+/* Contact Us  */
+#contact form div{
+    display: flex;
+    flex-direction: column;
+    /* width: 40vw; */
+    padding: 0.1rem 20px;
+}
+#contact form {
+    width: 50vw;
+    /* border: 0.1rem solid black; */
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: auto;
+    padding: 0.1rem 20px;
+}
+#contact form div button{
+    width: 10vw;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 5px;
+    padding: 0.2rem 20px;
+    cursor: pointer;
+}
+/* Footer Styling */
+#footer-1{
+    height: 4vh;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 4px 5px;
+}
+/* Utility Classes */
+.h-primary{
+    font-family:monospace;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+.p-primary{
+    color: white;
+    text-align: center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    padding: 5px 0px;
+}
+.btn{
+    background-color: #1a0f028c;
+    font-size: 1.1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    /* margin-top: 10px; */
+    padding: 5px 10px;
+}
+.btn:hover{
+    background-color: rgba(255, 255, 255, 0.699);
+    font-weight:lighter;
+    color: black;
+    border: 2px solid black;
+}
+.h-secondary{
+    text-align: center;
+    font-size: 2rem;
+}

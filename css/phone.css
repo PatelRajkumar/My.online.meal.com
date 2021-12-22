@@ -1,0 +1,102 @@
+/* Navbar */
+#navbar{
+    display: block;
+    height: 12vh;
+}
+#logo img{
+    display: block;
+    margin: auto;
+    margin-bottom: 0.3rem ;
+}
+#navbar ul{
+    justify-content: center;
+    align-items: center;
+}
+#navbar li a{
+    padding: 5px 2px;
+    margin: 5px 5px;
+    font-size: 1.1rem;
+}
+/* Home Section  */
+#home{
+   
+    /* position: relative; */
+    height: 500px;
+    /* top: 8vh; */
+     padding: 20px 10px;
+}
+ #home::before{
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+    opacity: 0.90;
+} 
+/* Services Section  */
+#services-box{
+    /* display: flex; */
+    flex-direction: column;
+}
+#services-1{
+    height: 5rem;
+    display: block;
+    margin: auto;
+}
+#services-2{
+    border-radius: 50%;
+    height: 7rem;
+    width: 7rem;
+    /* padding: 20px; */
+}
+#services-3{
+    height: 7rem;
+    width: 7rem;
+    /* padding: 20px; */
+}
+/* Clients Section  */
+.clients{
+    flex-wrap: wrap;
+}
+.clients-section{
+    /* margin-top: 10vh; */
+    line-height: 10vh;
+    height: 400px;
+}
+.clients img{
+    /* border: 2px solid red; */
+    height: 100px;
+    width: 100px;
+}
+#apple{
+    height: 150px;
+    width: 150px;
+    /* padding: 20px; */
+    /* border-radius: 50%; */
+}
+#microsoft{
+    padding: 1.2rem;
+}
+#google{
+    padding: 1rem;
+}
+#linkedin{
+    border-radius: 50%;
+    padding: 1rem;
+}
+#bitcoin{
+    padding: 1rem;
+}
+/* Contact Us section  */
+#contact form {
+    width: 80vw;
+    /* border: 0.1rem solid black; */
+    padding: 0.1rem 5px;
+}
+#contact form div button{
+    width: 60vw;
+    padding: 0.2rem 5px;
+    cursor: pointer;
+}
+/* Utility Classes */
+.h-primary{
+    font-size: 2rem;
+}
